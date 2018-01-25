@@ -280,3 +280,55 @@ ul li:nth-child(3):hover {
 }
 
 /* Second Content Section  */
+
+.smallContainer {
+  margin-left: 4.5rem;
+  margin-right: 2.5rem;
+}
+
+.secondContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course,
+.course img {
+  width: 20rem;
+}
+
+.course {
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.course_text {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: -2px;
+  height: 8rem;
+}
+
+.course_text h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.course_text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.lheader {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.course_text:hover {
+  /* background-color: #EFEFEF; */
+  background-color: #FF3B3F;
+  color: white;
+  transition: 450ms linear;
+}
