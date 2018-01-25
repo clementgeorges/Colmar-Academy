@@ -30,18 +30,41 @@
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(https://fonts.gstatic.com/s/roboto/v18/12mE4jfMSBTmg-81EiS-YQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v18/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 
 html {
   font-size: 16px;
 }
 
-body, {
+body {
+  color: #1d1c1cf2;
+}
+
+body,
+p {
+  font-family: "Roboto"
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Open Sans"
 }
 
@@ -95,13 +118,13 @@ ul li {
 ul li:nth-child(3):hover {
   color: #FF3B3F;
   /* font-weight: bold; */
-  transition: 600ms linear 100ms;
+  transition: 600ms linear 50ms;
 }
 
 /* Banner Section  */
 
-.bannerContainer {
-  background-color: #EFEFEF;
+.containerOne {
+  background-color: #E9E9E9;
 }
 
 .bannerContent {
@@ -110,12 +133,12 @@ ul li:nth-child(3):hover {
   align-items: center;
 }
 
-.bannerImage {
+.bannerContiner {
   display: flex;
   align-items: center;
 }
 
-.bannerImage img {
+.bannerContiner img {
   width: 60%;
   margin: 2rem 0;
 }
@@ -137,12 +160,14 @@ ul li:nth-child(3):hover {
   font-weight: bold;
   line-height: 2rem;
   margin-bottom: 1rem;
+  color: #1d1c1cf2;
 }
 
 .bannertext p {
   line-height: 1.5rem;
   font-family: "Roboto";
   margin-bottom: 1rem;
+  color: #1d1c1cf2;
 }
 
 .startHere {
@@ -160,5 +185,98 @@ ul li:nth-child(3):hover {
 .startHere:hover {
   background-color: #FF3B3F;
   border: 0.5px solid #FF3B3F;
-  transition: 600ms linear 100ms;
+  transition: 750ms linear 100ms;
 }
+
+/* First Content Section  */
+
+.containerOnewhite {
+  background-color: White;
+}
+
+.firstContent {
+  margin: 0 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fisrtContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.fisrtContainer img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.fisrtContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fisrtContainer p {
+  font-family: "Roboto";
+  margin-bottom: 2rem;
+  line-height: 1.55rem;
+}
+
+.fisrtContainer p:nth-child(2n) {
+  font-size: 0.85rem;
+}
+
+/* Side Content  */
+
+.firstSidecontiner {
+  margin-left: 1.5rem;
+}
+
+.firstSide {
+  display: flex;
+  align-items: center;
+  /* margin-top: 3rem; */
+  margin-bottom: 2rem;
+}
+
+.firstSide img {
+  width: 35%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.firstSide_text h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.firstSide_text p {
+  font-family: "Roboto";
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.readMore {
+  color: #88BBD6;
+  font-weight: bold;
+  font-family: "Open Sans"
+}
+
+.readMore:hover {
+  color: #FF3B3F;
+  transition: 500ms linear;
+  text-decoration: underline;
+  /* color: #1d1c1cf2; */
+}
+
+.firstSide:hover {
+  background-color: #E9E9E9;
+  transition: 500ms ease-in-out 50ms;
+  border-radius: 5px;
+  /* color: #FF3B3F; */
+}
+
+/* Second Content Section  */
