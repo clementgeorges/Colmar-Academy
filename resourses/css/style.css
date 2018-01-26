@@ -99,6 +99,10 @@ header {
   color: #A9A9A9;
 }
 
+.brandName span:nth-of-type(2):hover{
+  color: #FF3B3F;
+  transition: 500ms linear 300ms;
+}
 
 nav {
   display: flex;
@@ -115,9 +119,13 @@ ul li {
   padding: 1rem;
 }
 
-ul li:nth-child(3):hover {
+ul a {
+  color: #1d1c1cf2;
+  text-decoration: none;
+}
+
+nav a:hover {
   color: #FF3B3F;
-  /* font-weight: bold; */
   transition: 600ms linear 50ms;
 }
 
@@ -141,6 +149,8 @@ ul li:nth-child(3):hover {
 .bannerContiner img {
   width: 60%;
   margin: 2rem 0;
+  padding: 0.25rem;
+  background-color: white;
 }
 
 .bannerTextContainer {
@@ -182,6 +192,11 @@ ul li:nth-child(3):hover {
   border-radius: 0.25rem;
 }
 
+.startHere a{
+  color: white;
+  text-decoration: none;
+}
+
 .startHere:hover {
   background-color: #FF3B3F;
   border: 0.5px solid #FF3B3F;
@@ -203,19 +218,15 @@ ul li:nth-child(3):hover {
 .fisrtContainer {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 61%;
 }
 
 .fisrtContainer img {
   max-width: 100%;
-  margin: 2rem 0;
-}
-
-.fisrtContainer video {
-  max-width: 100%;
-  margin-bottom: 1.75rem;
+  margin: 1.75rem 0;
   padding: 0.25rem;
   background-color: #E9E9E9;
+
 }
 
 .fisrtContainer h2 {
@@ -266,13 +277,14 @@ ul li:nth-child(3):hover {
   line-height: 1.5rem;
 }
 
-.readMore {
+.readMore a {
   color: #88BBD6;
   font-weight: bold;
-  font-family: "Open Sans"
+  font-family: "Open Sans";
+  text-decoration: none;
 }
 
-.readMore:hover {
+.readMore a:hover {
   color: #FF3B3F;
   transition: 500ms linear;
   text-decoration: underline;
@@ -337,7 +349,7 @@ ul li:nth-child(3):hover {
   /* background-color: #EFEFEF; */
   background-color: #FF3B3F;
   color: white;
-  transition: 450ms linear 50ms;
+  transition: 450ms linear 200ms;
 }
 
 /* Third Content Section  */
@@ -354,9 +366,39 @@ ul li:nth-child(3):hover {
   align-self: flex-start;
 }
 
+.fisrtContainer video {
+  max-width: 100%;
+  margin-bottom: 1.75rem;
+  padding: 0.25rem;
+  background-color: #E9E9E9;
+}
+
 /* Footer Section  */
 
 footer {
-  border-top: 0.5rem solid #FF3B3F;
+  border-top: 0.05rem solid #E9E9E9;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
 
+.copyrightContainer {
+  display: flex;
+  margin: 1rem 2rem;
+}
+
+.terms {
+  display: flex;
+  justify-content: flex-end;
+  width: 78%;
+}
+
+.terms ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.terms a:hover {
+  color: #FF3B3F;
+  transition: 500ms linear 50ms;
 }
