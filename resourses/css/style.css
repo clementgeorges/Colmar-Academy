@@ -211,6 +211,13 @@ ul li:nth-child(3):hover {
   margin: 2rem 0;
 }
 
+.fisrtContainer video {
+  max-width: 100%;
+  margin-bottom: 1.75rem;
+  padding: 0.25rem;
+  background-color: #E9E9E9;
+}
+
 .fisrtContainer h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -330,5 +337,26 @@ ul li:nth-child(3):hover {
   /* background-color: #EFEFEF; */
   background-color: #FF3B3F;
   color: white;
-  transition: 450ms linear;
+  transition: 450ms linear 50ms;
+}
+
+/* Third Content Section  */
+
+.theaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thirdSidecontiner {
+  margin-left: 1.5rem;
+  align-self: flex-start;
+}
+
+/* Footer Section  */
+
+footer {
+  border-top: 0.5rem solid #FF3B3F;
+
 }
