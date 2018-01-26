@@ -246,6 +246,27 @@ nav a:hover {
   font-size: 0.85rem;
 }
 
+@media only screen and (max-width: 880px) {
+  .firstContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .firstSide {
+    justify-content: center;
+    max-width: 53%;
+    margin: auto;
+  }
+
+  .thirdSidecontiner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+  }
+
+}
+
 /* Side Content  */
 
 .firstSidecontiner {
