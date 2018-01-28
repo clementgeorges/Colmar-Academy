@@ -169,6 +169,36 @@ nav a:hover {
 
 }
 
+@media only screen and (max-width: 680px) {
+  .brandName,
+  nav ul {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .mobileNav a {
+    color: black;
+  }
+
+  .mobileNav i {
+    margin: 0 3rem;
+  }
+
+  .logo img {
+    height: 3.05rem;
+  }
+
+  header {
+    padding: 0rem;
+    margin: 1rem 0;
+  }
+}
+
 /* Banner Section  */
 
 .containerOne {
@@ -389,15 +419,20 @@ nav a:hover {
   }
 
   .firstSide {
-    justify-content: flex-start;
-    max-width: 100%;
-    margin: auto;
+    /* justify-content: flex-start; */
+    max-width: 93%;
+    /* margin: auto; */
   }
 
   .thirdSidecontiner {
     display: flex;
     flex-direction: column;
-    padding-left: 5rem;
+    width: 90%;
+    /* padding-left: 5rem; */
+  }
+
+  .thirdSidecontiner .firstSide {
+    margin: 0;
   }
 
 }
