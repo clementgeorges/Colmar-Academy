@@ -73,13 +73,10 @@ h5 {
 header {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  margin: 1rem 1.5rem;
   font-family: "Open Sans";
   /* position: fixed;
   z-index: 2; */
-}
-.logo {
-  margin-left: 1.5rem;
 }
 
 .logo img {
@@ -148,6 +145,7 @@ nav a:hover {
     width: 100%;
     margin: auto;
     justify-content: space-around;
+    align-items: center;
   }
 
   .mobileNav a {
@@ -155,16 +153,23 @@ nav a:hover {
   }
 
   .mobileNav i {
-    margin: 0 3rem;
   }
 
   .logo img {
-    height: 3.05rem;
+    display: none;
+  }
+
+  .navLogo {
+    height: 3rem;
   }
 
   header {
     padding: 0rem;
     margin: 1rem 0;
+  }
+
+  .logo img {
+    height: 2rem;
   }
 
 }
@@ -179,6 +184,7 @@ nav a:hover {
     width: 100%;
     margin: auto;
     justify-content: space-around;
+    align-items: center;
   }
 
   .mobileNav a {
@@ -186,16 +192,23 @@ nav a:hover {
   }
 
   .mobileNav i {
-    margin: 0 3rem;
   }
 
   .logo img {
-    height: 3.05rem;
+    display: none;
+  }
+
+  .navLogo {
+    height: 3rem;
   }
 
   header {
     padding: 0rem;
     margin: 1rem 0;
+  }
+
+  .logo img {
+    margin-left: 2rem;
   }
 }
 
@@ -206,7 +219,7 @@ nav a:hover {
 }
 
 .bannerContent {
-  margin: 0 4rem;
+  margin: 0 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -214,6 +227,7 @@ nav a:hover {
 .bannerContiner {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .bannerContiner img {
@@ -317,9 +331,8 @@ nav a:hover {
 }
 
 .firstContent {
-  margin: 0 4rem 2rem;
+  margin: 0 1.5rem 2rem;
   display: flex;
-  align-items: center;
 }
 
 .fisrtContainer {
@@ -332,8 +345,7 @@ nav a:hover {
   max-width: 100%;
   margin: 1.75rem 0;
   padding: 0.25rem;
-  background-color: #E9E9E9;
-
+  background-color: #f3f3f3de;
 }
 
 .fisrtContainer h2 {
@@ -369,7 +381,7 @@ nav a:hover {
   }
 
   .firstSidecontiner {
-    margin: 1rem;
+    padding-right: 1rem;
   }
 
   .firstSide {
@@ -386,16 +398,20 @@ nav a:hover {
   .firstSide img:nth-child(2) {
     display: block;
     width: 100%;
-    margin-top: -1rem;
     padding: 0;
+    border-radius: 0;
   }
 
   .firstSide_text {
     display: flex;
-    flex-direction: column;
-    width: 100%;
     margin-left: 1rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .firstSide_text p {
+    display: flex;
+    width: 100%;
   }
 
   .readMore {
@@ -416,45 +432,46 @@ nav a:hover {
 
   .fisrtContainer {
     max-width: 97%;
+    margin-left: 1.5rem;
   }
 
   .firstSide {
-    /* justify-content: flex-start; */
     max-width: 93%;
-    /* margin: auto; */
   }
 
   .thirdSidecontiner {
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* padding-left: 5rem; */
-  }
-
-  .thirdSidecontiner .firstSide {
-    margin: 0;
   }
 
 }
 
-/* Side Content  */
+/* First Side Content  */
 
 .firstSidecontiner {
-  margin-left: 1.5rem;
+  margin: 1.6rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .firstSide {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  /* border: 0.05rem solid #E9E9E9;
-  border-radius: 0.25rem; */
+  background-color: #f3f3f3de;
+  border-radius: 1rem 0;
 }
 
 .firstSide img {
   width: 35%;
   height: auto;
   padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.firstSide_text {
+  margin-left: 1.5rem;
 }
 
 .firstSide_text h3 {
@@ -479,14 +496,12 @@ nav a:hover {
   color: #FF3B3F;
   transition: 500ms linear;
   text-decoration: underline;
-  /* color: #1d1c1cf2; */
 }
 
 .firstSide:hover {
   background-color: #E9E9E9;
   transition: 500ms ease-in-out 50ms;
-  border-radius: 5px;
-  /* color: #FF3B3F; */
+  border-radius: 0 1rem;
 }
 
 /* Second Content Section  */
@@ -614,8 +629,6 @@ nav a:hover {
     display: none;
   }
 
-
-
 }
 
 /* Third Content Section  */
@@ -636,7 +649,7 @@ nav a:hover {
   max-width: 100%;
   margin-bottom: 1.75rem;
   padding: 0.25rem;
-  background-color: #E9E9E9;
+  background-color: #f3f3f3de;
 }
 
 @media only screen and (max-width: 480px) {
@@ -710,11 +723,6 @@ footer {
 
   footer .terms {
     display: none;
-  }
-
-  footer {
-
-
   }
 
   footer .copyrightContainer {
