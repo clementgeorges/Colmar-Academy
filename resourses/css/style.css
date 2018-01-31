@@ -90,6 +90,7 @@ header {
 
 .brandName span:nth-of-type(1){
   font-weight: bold;
+  color: #1d1c1cf2;
 }
 
 .brandName span:nth-of-type(2){
@@ -149,7 +150,7 @@ nav a:hover {
   }
 
   .mobileNav a {
-    color: black;
+    color: #1d1c1cf2;
   }
 
   .mobileNav i {
@@ -188,7 +189,7 @@ nav a:hover {
   }
 
   .mobileNav a {
-    color: black;
+    color: #1d1c1cf2;
   }
 
   .mobileNav i {
@@ -235,6 +236,12 @@ nav a:hover {
   margin: 2rem 0;
   padding: 0.25rem;
   background-color: white;
+  opacity: 0.9;
+}
+
+.bannerContiner img:hover {
+  opacity: 1;
+  transition: 450ms ease-in-out 50ms;
 }
 
 .bannerTextContainer {
@@ -254,36 +261,36 @@ nav a:hover {
   font-weight: bold;
   line-height: 2rem;
   margin-bottom: 1rem;
-  color: #1d1c1cf2;
 }
 
 .bannertext p {
   line-height: 1.5rem;
   margin-bottom: 1rem;
-  color: #1d1c1cf2;
 }
 
 .startHere {
   font-family: "Roboto";
   margin:;
-  background-color: #88BBD6;
+  background-color: #FF3B3F;
   text-align: center;
   color: white;
   padding: 0.5rem;
   font-weight: bold;
-  border: 0.5px solid #88BBD6;
   border-radius: 0.25rem;
 }
 
-.startHere a{
+.startHere a {
   color: white;
   text-decoration: none;
 }
 
+.startHere a:hover {
+  text-decoration: underline;
+}
+
 .startHere:hover {
-  background-color: #FF3B3F;
-  border: 0.5px solid #FF3B3F;
-  transition: 750ms linear 100ms;
+  opacity: 0.8;
+  transition: 500ms linear 100ms;
 }
 
 /* Mobile View Benner Section  */
@@ -346,7 +353,14 @@ nav a:hover {
   margin: 1.75rem 0;
   padding: 0.25rem;
   background-color: #f3f3f3de;
+  opacity: 0.9;
 }
+
+.fisrtContainer img:hover {
+  opacity: 1;
+  transition: 450ms ease-in-out 50ms;
+}
+
 
 .fisrtContainer h2 {
   font-size: 2rem;
@@ -471,7 +485,7 @@ nav a:hover {
 }
 
 .firstSide_text {
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 
 .firstSide_text h3 {
@@ -486,14 +500,13 @@ nav a:hover {
 }
 
 .readMore a {
-  color: #88BBD6;
+  color: #FF3B3F;
   font-weight: bold;
   font-family: "Open Sans";
   text-decoration: none;
 }
 
 .readMore a:hover {
-  color: #FF3B3F;
   transition: 500ms linear;
   text-decoration: underline;
 }
@@ -546,7 +559,7 @@ nav a:hover {
 
 .lheader {
   text-align: center;
-  margin: 2rem;
+  padding: 2rem;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -554,7 +567,7 @@ nav a:hover {
 .course_text:hover {
   background-color: #FF3B3F;
   color: white;
-  transition: 500ms ease-in-out 300ms;
+  transition: 500ms ease-in-out 50ms;
 }
 
 .mobileCourse {
@@ -694,6 +707,7 @@ footer {
   display: flex;
   align-items: center;
   font-size: 0.75rem;
+  background-color: #E9E9E9;
 }
 
 .copyrightContainer {
